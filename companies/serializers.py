@@ -12,7 +12,7 @@ class EmployeesSerializer (serializers.ModelSerializer):
     
     class Meta:
         model = Employee
-        fieds = (
+        fields = (
             'id',
             'name',
             'email'
@@ -30,7 +30,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Employee
-        fieds = (
+        fields = (
             'id',
             'name',
             'email',
