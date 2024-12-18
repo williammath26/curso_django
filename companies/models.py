@@ -10,7 +10,7 @@ class Employee(models.Model):
     enterprise = models.ForeignKey(Enterprise , on_delete=models.CASCADE)
     
 class TaskStatus(models.Model):
-    named = models.CharField(max_length=155)
+    name = models.CharField(max_length=155)
     codename = models.CharField(max_length=100)
         
     class Meta:

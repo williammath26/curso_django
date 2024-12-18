@@ -106,7 +106,7 @@ class TasksSerializer (serializers.ModelSerializer):
 
 class TaskSerializer (serializers.ModelSerializer):
     status = serializers.SerializerMethodField()
-    employe = serializers.SerializerMethodField()
+    employee = serializers.SerializerMethodField()
     
     class Meta:
         model = Task
