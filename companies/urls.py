@@ -3,9 +3,8 @@ from django.urls import path
 from companies.views.employees import Employees, EmployeeDetail
 
 urlpatterns = [
-    #employees endpoints
-    path('employees', Employees.as_view()),
-    path('Employees/<int:employee_id>',EmployeeDetail.as_view())
-    
-    
+    # Lista de funcionários
+    path('employees', Employees.as_view(), name='employees_list'),
+    # Detalhes de um funcionário
+    path('employees/<int:employee_id>', EmployeeDetail.as_view(), name='employee_detail'),
 ]

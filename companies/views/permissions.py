@@ -1,0 +1,1 @@
+from companies.views.base import Base
