@@ -9,4 +9,5 @@ from django.contrib.auth.models import permission
 class PermissionDetail(Base):
     permission_classes = [GroupsPermission]
     
-    def get
+    def get(self,request):
+        permissions = Permission.object.filter(contente_type_id__in=[])
